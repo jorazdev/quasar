@@ -4,7 +4,7 @@
     .items-center.q-gutter-xs.cursor-pointer
         q-icon(name="today" size="25px")
             q-popup-proxy(@before-show="updateProxy()" cover transition-show="scale" transition-hide="scale")
-                q-date(v-model='proxyDate' mask="DD/MM/YYYY" :locale='locale' today-btn)
+                q-date(v-model='proxyDate' mask="DD/MM/YYYY" :locale='locale' today-btn @navigation="navigation($event)")
                     .row.items-center.justify-end.q-gutter-sm
                         q-btn(:label="$t('btn.cancel')" color="primary" flat v-close-popup)
                         q-btn(:label="$t('btn.validate')" color="primary" flat @click="save('date')" v-close-popup)
@@ -32,9 +32,10 @@ const props = defineProps({
 const emit = defineEmits(['update:modelValue'])
 
 const dateIni = new Date()
-const timeIni = dateIni.getHours()+':'+(dateIni.getMinutes() < 10 ? '0' : '') + dateIni.getMinutes()
+const timeIni = `${dateIni.getHours()}:${(dateIni.getMinutes() < 10 ? '0' : '')}${dateIni.getMinutes()}` 
 const nowIni = dateIni.toLocaleDateString('en-GB')
 
+const year = ref('')
 const date = ref(props.modelValue.split(' ')[0])
 const time = ref(props.modelValue.split(' ')[1])
 
@@ -46,7 +47,11 @@ const locale = reactive({
     monthsShort: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
 })
 
-const dt = computed(() => date.value + ' '+ time.value)
+const dt = computed(() => {
+    const y = year.value != undefined && year.value != '' ? year.value : date.value.split('/')[2]
+    const d = `${date.value.split('/')[0]}/${date.value.split('/')[1]}/${y}`
+    return d + ' '+ time.value
+})
 
 const inputValue = (event: any) => {
     date.value = event.split(' ')[0]
@@ -61,6 +66,7 @@ const updateProxy = () => {
 
 const save = (type: string) => {
     if(type == 'date'){
+        console.log(proxyDate.value)
         date.value = proxyDate.value
         time.value = proxyTime.value != undefined && proxyTime.value != '' ? proxyTime.value : timeIni
     }else{
@@ -70,6 +76,9 @@ const save = (type: string) => {
     emit('update:modelValue', dt.value)
 }
 
+const navigation = (event: any) => {
+    year.value = event.year
+}
 </script>
 <style lang="scss">
     .border-bottom-color {
