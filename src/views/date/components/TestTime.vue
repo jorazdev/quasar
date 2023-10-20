@@ -1,24 +1,24 @@
-<template lang="pug">
-.q-pa-md
-    .q-gutter-sm.row.items-center
-        q-input(v-model="time" mask="time" :rules="['time']")
-            template(v-slot:append)
-                q-icon.cursor-pointer(name="access_time")
-                    q-popup-proxy(cover persistent transition-show="scale" transition-hide="scale")
-                        q-time(v-model="time" ref="dNow" :now-btn="true" format24h="")
-                            .row.items-center.justify-end
-                                q-btn(v-close-popup :label="$t('notifications.cancel')" color="primary" flat)
-                                q-btn(v-close-popup :label="$t('sub_components.changePassword.validate')"
-                                :disable="computeDisableValBtn" color="primary" flat @click="validateTime()")
-
-       
-        slot(name="header")
-            #test1 child header
-        slot(name="footer")
-            #test2 child footer
+<template>
+<div class="q-pa-md" style="max-width: 300px">
+    <q-input filled v-model="date" mask="date" :rules="['date']">
+      <template v-slot:append>
+        <q-icon name="event" class="cursor-pointer">
+          <q-popup-proxy cover transition-show="scale" transition-hide="scale">
+            <q-date v-model="date">
+              <div class="row items-center justify-end">
+                <q-btn v-close-popup label="Close" color="primary" flat />
+              </div>
+            </q-date>
+          </q-popup-proxy>
+        </q-icon>
+      </template>
+    </q-input>
+  </div>
 </template>
 <script ts lang="ts">
+import { ref } from 'vue'
 
+const date =  ref('02/01/2019')
 </script>
 <style lang="scss">
     

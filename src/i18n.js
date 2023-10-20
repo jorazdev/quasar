@@ -3,7 +3,7 @@ import { createI18n } from 'vue-i18n'
 import en from './locales/en.json'
 import fr from './locales/fr.json'
 
-const loadLocalMessages = () => {
+export const loadLocalMessages = () => {
     const locales = [{en: en}, {fr: fr}]
     const messages = {}
 
@@ -15,8 +15,11 @@ const loadLocalMessages = () => {
     return messages
 }
 
-export default createI18n({
+export const i18nOption = {
     locale: 'fr',
     fallbackLocale: 'fr',
-    messages: loadLocalMessages()
-})
+    messages: loadLocalMessages(),
+    legacy: false
+}
+
+export default createI18n(i18nOption)

@@ -1,25 +1,25 @@
 <!-- eslint-disable @typescript-eslint/no-unused-vars -->
 
 <template lang="pug">
-.q-mt-md.col-2(style="width: 20%")
-    QuDateTime(v-model="dateTime").q-mb-lg
-    q-btn(@click="show" color="primary" label="Primary")
+//- .q-mt-md.col-2(style="width: 20%")
+//-     QuDateTime(v-model="dateTime").q-mb-lg
+//-     q-btn(@click="show" color="primary" label="Primary")
+.q-mt-md.col-2
+    TestDate(v-model="dateTime")
 
+.q-mt-md.col-2(style="width: 50%")
+    h1 {{ dateTime }}
+    h2 {{ $t('locale.monthsShort') }}
 //- .q-mt-md.col-2(style="width: 20%")
 //-     InputForm
-.q-mt-md.col-2(style="width: 80%")
-    TestTime
-        template(v-slot:header)
-            div foot here
 
-        template(v-slot:footer)
-            div head here
+        
 </template>
 <script setup lang="ts">
 import { ref } from 'vue';
 import QuDateTime from './components/QuDateTime.vue';
 import InputForm from './components/InputForm.vue';
-import TestTime from './components/TestTime.vue';
+import TestDate from './components/TestDate.vue';
 
 const dateTime = ref('')
 

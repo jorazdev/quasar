@@ -4,5 +4,9 @@
     "btn":{
         "validate": "Validadte",
         "cancel": "Cancel"
+    },
+    "locale": {
+        "daysShort": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        "monthsShort": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
     }
 }

@@ -5,8 +5,8 @@
         "validate": "Valider",
         "cancel": "Annuler"
     },
-    "calendar": {
-        "daysShort": ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"],
+    "locale": {
+        "daysShort": "[\"Lun\", \"Mar\", \"Mer\", \"Jeu\", \"Ven\", \"Sam\", \"Dim\"]",
         "monthsShort": ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]
     }
     
