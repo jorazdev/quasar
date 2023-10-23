@@ -1,24 +1,26 @@
 <template lang="pug">
 .q-pa-md(style='max-width: 300px')
-    q-input(:model-value="modelValue" @update:model-value="inputValue($event)" :disable="props.disabled")
+    q-input(:model-value="model" :disable="props.disabled")
       template(v-slot:append='')
         q-icon.cursor-pointer(name='event')
-          q-popup-proxy(@before-show="updateProxy()" cover='' transition-show='scale' transition-hide='scale')
-            q-date(v-model='proxyDate' mask="DD/MM/YYYY")
-                .row.items-center.justify-end.q-gutter-sm
-                    q-btn(:label="$t('btn.cancel')" color="primary" flat v-close-popup)
-                    q-btn(:label="$t('btn.validate')" color="primary" flat @click="save('date')" v-close-popup)
+            q-popup-proxy(@before-show="updateProxy()" cover='' transition-show='scale' transition-hide='scale')
+                q-date(v-model='proxyDate' mask="DD/MM/YYYY" :locale="locale" @navigation="navigation")
+                    .row.items-center.justify-end.q-gutter-sm
+                        q-btn(:label="$t('btn.cancel')" color="primary" flat v-close-popup)
+                        q-btn(:label="$t('btn.validate')" color="primary" flat @click="save()" v-close-popup)
 
-        q-icon.cursor-pointer(name='access_time')
+        q-icon.cursor-pointer(name='access_time' v-if="props.withTime")
             q-popup-proxy(@before-show="updateProxy()" cover='' transition-show='scale' transition-hide='scale')
                 q-time(v-model='proxyTime' mask='HH:mm' format24h='')
                     .row.items-center.justify-end.q-gutter-sm
                         q-btn(:label="$t('btn.cancel')" color="primary" flat v-close-popup)
-                        q-btn(:label="$t('btn.validate')" color="primary" flat @click="save('time')" v-close-popup)
+                        q-btn(:label="$t('btn.validate')" color="primary" flat @click="save()" v-close-popup)
       
 </template>
 <script setup lang="ts">
 import {ref, computed} from 'vue'
+import { useI18n } from 'vue-i18n'
+import { loadLocalMessages, i18nOption } from '../../../i18n'
 
 const props = defineProps({
     modelValue: {
@@ -28,51 +30,51 @@ const props = defineProps({
     disabled: {
         type: Boolean,
         default: false
+    },
+    withTime: {
+        type: Boolean,
+        default: true
     }
 })
 
+const emit = defineEmits(['update:modelValue'])
+
+const {d, t} = useI18n()
 const dateIni = new Date()
+
 const timeIni = `${(dateIni.getHours() < 10 ? '0' : '')}${dateIni.getHours()}:${(dateIni.getMinutes() < 10 ? '0' : '')}${dateIni.getMinutes()}` 
 const nowIni = dateIni.toLocaleDateString('en-GB')
 
-const emit = defineEmits(['update:modelValue'])
-
 const year = ref('')
-const date = ref(props.modelValue.split(' ')[0])
-const time = ref(props.modelValue.split(' ')[1])
-    
-const proxyDate = ref(date.value)
-const proxyTime = ref(time.value)
+const proxyDate = ref('')
+const proxyTime = ref('')
+const locale = ref({
+    daysShort: t('locale.daysShort').split('_'),
+    monthsShort: t('locale.monthsShort').split('_'),
+})
 
-const dt = computed(() => {
-        const y = year.value != undefined && year.value != '' ? year.value : date.value.split('/')[2]
-        const d = `${date.value.split('/')[0]}/${date.value.split('/')[1]}/${y}`
-        return d + ' '+ time.value
-    })
+const model = computed({
+    get: () => props.modelValue,
+    set: (value) => emit('update:modelValue', value)
+})
 
-const inputValue = (event: any) => {
-    date.value = event.split(' ')[0]
-    time.value = event.split(' ')[1]
-    emit('update:modelValue', event)
-}
+const date = computed(() => {
+    const [d, m, Y] = proxyDate.value.split('/')
+    const y = year.value ? year.value : Y
+    return `${d}/${m}/${y}`
+})
 
 const updateProxy = () => {
-    proxyDate.value = props.modelValue.split(' ')[0] != '' && props.modelValue.split(' ')[0] != undefined ? props.modelValue.split(' ')[0] : nowIni
-    proxyTime.value = props.modelValue.split(' ')[1] != '' && props.modelValue.split(' ')[1] != undefined ? props.modelValue.split(' ')[1] : timeIni
+    const [d, t] = props.modelValue.split(' ')
+    proxyDate.value = d != '' && d != undefined ? d : nowIni
+    proxyTime.value = props.withTime ? (t != '' && t != undefined ? t : timeIni) : ''
 }
 
-const save = (type: string) => {
-    if(type == 'date'){
-        date.value = proxyDate.value
-        time.value = props.modelValue.split(' ')[1] != '' && props.modelValue.split(' ')[1] != undefined ? props.modelValue.split(' ')[1] : timeIni
-    }else{
-        date.value = proxyDate.value != undefined && proxyDate.value != '' ? proxyDate.value : nowIni
-        time.value = proxyTime.value
-    }
-    emit('update:modelValue', dt.value)
+const save = () => {
+   model.value = `${date.value} ${proxyTime.value}`
 }
 
 const navigation = (event: any) => {
-        year.value = event.year
-    }
+    year.value = event.year
+}
 </script>

@@ -9,10 +9,12 @@
 
 .q-mt-md.col-2(style="width: 50%")
     h1 {{ dateTime }}
-    h2 {{ $t('locale.monthsShort') }}
-//- .q-mt-md.col-2(style="width: 20%")
-//-     InputForm
+   
+.q-mt-md.col-2
+    TestDate(v-model="date" :withTime="false")
 
+.q-mt-md.col-2(style="width: 50%")
+    h1 {{ date }}
         
 </template>
 <script setup lang="ts">
@@ -22,6 +24,7 @@ import InputForm from './components/InputForm.vue';
 import TestDate from './components/TestDate.vue';
 
 const dateTime = ref('')
+const date = ref('')
 
 // const date = new Date()
 // const m = (date.getMinutes() < 10 ? '0' : '') + date.getMinutes()

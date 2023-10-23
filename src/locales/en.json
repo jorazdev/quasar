@@ -6,7 +6,7 @@
         "cancel": "Cancel"
     },
     "locale": {
-        "daysShort": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-        "monthsShort": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+        "daysShort": "Mon_Tue_Wed_Thu_Fri_Sat_Sun",
+        "monthsShort": "January_February_March_April_May_June_July_August_September_October_November_December"
     }
 }

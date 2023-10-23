@@ -6,9 +6,7 @@
         "cancel": "Annuler"
     },
     "locale": {
-        "daysShort": "[\"Lun\", \"Mar\", \"Mer\", \"Jeu\", \"Ven\", \"Sam\", \"Dim\"]",
-        "monthsShort": ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]
+        "daysShort": "Lun_Mar_Mer_Jeu_Ven_Sam_Dim",
+        "monthsShort": "Janvier_Février_Mars_Avril_Mai_Juin_Juillet_Août_Septembre_Octobre_Novembre_Décembre"
     }
-    
-    
 }

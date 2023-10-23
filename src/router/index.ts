@@ -55,6 +55,11 @@ const router = createRouter({
           name: 'grid',
           component: GridView
         },
+        {
+          path: '/checkbox',
+          name: 'checkbox',
+          component: () => import('../views/checkbox/CheckBox.vue')
+        },
       ]
     },
     {
