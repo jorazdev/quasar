@@ -2,10 +2,10 @@
 .q-pa-md(style='max-width: 300px')
     q-input(v-model="model" @update:model-value="inputValue($event)" :disable="props.disabled")
       template(v-slot:append='')
-        q-icon(name="error" color="negative" v-if="!isDatetime")
+        q-icon(name="error" color="negative" v-if="!isValidDatetime")
         q-icon.cursor-pointer(name='event')
             q-popup-proxy(@before-show="updateDate()" cover='' transition-show='scale' transition-hide='scale')
-                q-date(v-model='date' :mask="t('datetime.mask')" :locale="locale")
+                q-date(v-model='date' :mask="withTime ? t('datetime.mask') : t('date.mask')" :locale="locale")
                     .row.items-center.justify-end.q-gutter-sm
                         q-btn(:label="$t('btn.cancel')" color="primary" flat v-close-popup)
                         q-btn(:label="$t('btn.validate')" color="primary" flat @click="save()" v-close-popup)
@@ -44,7 +44,7 @@ const emit = defineEmits(['update:modelValue'])
 const {d, t} = useI18n()
 
 const date = ref('')
-const isDatetime = ref(false)
+const isValidDatetime = ref(false)
 const locale = ref({
     daysShort: t('locale.daysShort').split('_'),
     monthsShort: t('locale.monthsShort').split('_'),
@@ -56,7 +56,7 @@ const model = computed({
 })
 
 const save = () => {
-    verifDatetime(model.value)
+    verifDatetime(date.value)
     model.value = date.value
 }
 
@@ -69,11 +69,11 @@ const inputValue = (event: string) => {
 }
 
 const verifDatetime = (value: string) => {
-    const regex = new RegExp(t('datetime.regex'));
+    const regex = new RegExp(props.withTime ? t('datetime.regex') : t('date.regex'));
     if (regex.test(value)) {
-        isDatetime.value = true
+        isValidDatetime.value = true
     } else {
-        isDatetime.value = false
+        isValidDatetime.value = false
     }
 }
 </script>
