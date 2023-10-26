@@ -15,15 +15,18 @@
 
 .q-mt-md.col-2(style="width: 50%")
     h1 {{ date }}
-        
+//- .q-mt-md.col-2(style="width: 20%")
+//-     FieldDatetime(v-model="dateTime")
 </template>
 <script setup lang="ts">
 import { ref } from 'vue';
 import QuDateTime from './components/QuDateTime.vue';
 import InputForm from './components/InputForm.vue';
 import TestDate from './components/TestDate.vue';
+import FieldDatetime from './components/FieldDatetime.vue';
 
-const dateTime = ref('')
+
+const dateTime = ref() //'26/10/2023 11:53'
 const date = ref('')
 
 // const date = new Date()

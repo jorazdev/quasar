@@ -60,6 +60,11 @@ const router = createRouter({
           name: 'checkbox',
           component: () => import('../views/checkbox/CheckBox.vue')
         },
+        {
+          path: '/search',
+          name: 'search',
+          component: () => import('../views/search/InputSearchView.vue')
+        },
       ]
     },
     {
