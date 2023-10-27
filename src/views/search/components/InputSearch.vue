@@ -1,11 +1,14 @@
 <template lang="pug">
-q-select.q-pa-md.q-gutter-md.row(
+q-select(
     v-model='model' 
     use-input='' 
+    fill-input='' 
+    hide-selected='' 
     input-debounce='0' 
     :label="title"
     :options='options' 
-    @filter='filterFn')
+    @filter='filterFn' 
+    @input-value="setModel")
     template(v-slot:no-option='')
         q-item
             q-item-section.text-grey
@@ -22,33 +25,37 @@ interface Item {
 interface Props {
     modelValue: string
     title: string
-    items: string[]
+    items: Item[]
 }
 
 const props = withDefaults(defineProps<Props>(), {
-    modelValue: '',
     title: '',
     items: () => []
 })
 
-const emit = defineEmits(['update:modelValue'])
+const emit = defineEmits(['update:modelValue', 'getItem'])
 
 const model = computed({
     get: () => props.modelValue,
-    set: (value) => emit('update:modelValue', value)
+    set: (value) => {
+        if(typeof value === 'object'){
+            emit('getItem', value)
+        }
+        emit('update:modelValue', value)
+    }
 })
 
-//console.log(props.items)
-const options = ref(props.items)
+const options = ref<Item[]>(props.items)
 
 const filterFn = (val: string, update: any) => {
-    //console.log(toRaw(props.items))
-    //console.log(props.items)
     update(() => {
         const needle = val.toLowerCase()
-        // options.value = props.items.filter(item => item.label.toLowerCase().indexOf(needle) > -1)
-        options.value = toRaw(props.items).filter(v => v.toLowerCase().indexOf(needle) > -1)
+        options.value = props.items.filter(item => item.label.toLowerCase().indexOf(needle) > -1)
     })
+}
+
+const setModel = (val: any) => {
+    model.value = val
 }
 
 </script>
