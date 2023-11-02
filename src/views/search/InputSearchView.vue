@@ -45,7 +45,8 @@ onMounted(() => {
 })
 
 const getArticle = async () => {
-    const res = await get('https://jorazdev.com/api/article/all')
+    // const res = await get('https://jorazdev.com/api/article/all')
+    const res = await get('data/data.json')
     articles.value = res.data.map((article: any) => ({id: article.id, label: article.label}))
     // articles.value = res.data.map((article: any) => article.label)
 }

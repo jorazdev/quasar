@@ -1,0 +1,962 @@
+[
+   {
+      "id":4,
+      "label":"Agneau de lait entier environ 5kg | Prêt à cuire ",
+      "price":133330,
+      "category":"Boucherie"
+   },
+   {
+      "id":5,
+      "label":"Ailes de Poulet",
+      "price":22000,
+      "category":"Boucherie"
+   },
+   {
+      "id":6,
+      "label":"Andouillette entre 200g à 300g LeaderPrice",
+      "price":13560,
+      "category":"Boucherie"
+   },
+   {
+      "id":7,
+      "label":"Bacon de Porc 200g à 300g LeaderPrice",
+      "price":26000,
+      "category":"Boucherie"
+   },
+   {
+      "id":8,
+      "label":"Bavette d’aloyau de Boeuf Traditionnel Environ 500g LeaderPrice",
+      "price":14400,
+      "category":"Boucherie"
+   },
+   {
+      "id":134,
+      "label":"Blanc de Poulet sans os | 500g",
+      "price":12000,
+      "category":"Boucherie"
+   },
+   {
+      "id":9,
+      "label":"Bosse de Boeuf ou Trafony Environ 500g LeaderPrice",
+      "price":13000,
+      "category":"Boucherie"
+   },
+   {
+      "id":10,
+      "label":"Boudin Blanc Environ 600g",
+      "price":23230,
+      "category":"Boucherie"
+   },
+   {
+      "id":135,
+      "label":"Boulette de viande de Boeuf hachée | 500g",
+      "price":12000,
+      "category":"Boucherie"
+   },
+   {
+      "id":11,
+      "label":"Bourguignon de Boeuf Traditionnel Environ 500g",
+      "price":15500,
+      "category":"Boucherie"
+   },
+   {
+      "id":1,
+      "label":"Brochettes d’Agneau marinées 1 kg",
+      "price":36000,
+      "category":"Boucherie"
+   },
+   {
+      "id":12,
+      "label":"Brochettes de Coeur de Boeuf | 500g",
+      "price":10000,
+      "category":"Boucherie"
+   },
+   {
+      "id":13,
+      "label":"Brochettes de filet de Zébu et Trafony (bosse de zébu) | 750g",
+      "price":47400,
+      "category":"Boucherie"
+   },
+   {
+      "id":14,
+      "label":"Brochettes de Porc avec gras | 500g",
+      "price":13000,
+      "category":"Boucherie"
+   },
+   {
+      "id":136,
+      "label":"Brochettes de Poulet | 500g",
+      "price":12000,
+      "category":"Boucherie"
+   },
+   {
+      "id":2,
+      "label":"Brochettes de Poulet | 500g – avec tomates et oignons",
+      "price":13000,
+      "category":"Boucherie"
+   },
+   {
+      "id":15,
+      "label":"Brochettes de Trafony (bosse de zébu) | 500g – morceaux gras",
+      "price":16000,
+      "category":"Boucherie"
+   },
+   {
+      "id":16,
+      "label":"Caille Environ 500g LeaderPrice™ | oiseau migrateur de petite taille,15Cm de longueur max",
+      "price":37733,
+      "category":"Boucherie"
+   },
+   {
+      "id":17,
+      "label":"Canard entier | environ 1.8 kg – Canard malgache élevé à l’air libre",
+      "price":50000,
+      "category":"Boucherie"
+   },
+   {
+      "id":18,
+      "label":"Carcasse de Poulet | environ 500g",
+      "price":8000,
+      "category":"Boucherie"
+   },
+   {
+      "id":19,
+      "label":"Cervelle de Boeuf | 1 pièce env. 400g",
+      "price":8000,
+      "category":"Boucherie"
+   },
+   {
+      "id":20,
+      "label":"Chair à Saucisse 500g ",
+      "price":16795,
+      "category":"Boucherie"
+   },
+   {
+      "id":21,
+      "label":"Chorizo environ 500g",
+      "price":45300,
+      "category":"Boucherie"
+   },
+   {
+      "id":137,
+      "label":"Coeur de Boeuf | 500g",
+      "price":11000,
+      "category":"Boucherie"
+   },
+   {
+      "id":138,
+      "label":"Coeur de Boeuf préparé | 500g – assaisonné",
+      "price":9333,
+      "category":"Boucherie"
+   },
+   {
+      "id":22,
+      "label":"Collier d’Agneau Environ 500g",
+      "price":15730,
+      "category":"Boucherie"
+   },
+   {
+      "id":23,
+      "label":"Coquelet environ 500g",
+      "price":22000,
+      "category":"Boucherie"
+   },
+   {
+      "id":24,
+      "label":"Côte d’Agneau Environ 500g",
+      "price":16600,
+      "category":"Boucherie"
+   },
+   {
+      "id":25,
+      "label":"Côte de boeuf Traditionnel Environ 500g",
+      "price":13600,
+      "category":"Boucherie"
+   },
+   {
+      "id":26,
+      "label":"Côte de Filet d’Agneau Environ 500g",
+      "price":16700,
+      "category":"Boucherie"
+   },
+   {
+      "id":27,
+      "label":"Côte de Porc – Tranches épaisses x 4",
+      "price":22000,
+      "category":"Boucherie"
+   },
+   {
+      "id":139,
+      "label":"Côte de Porc | 500g",
+      "price":14000,
+      "category":"Boucherie"
+   },
+   {
+      "id":140,
+      "label":"Côte de Porc préparé | 500g – assaisonné",
+      "price":14000,
+      "category":"Boucherie"
+   },
+   {
+      "id":28,
+      "label":"Côtes d’Agneau marinées | 1 kg",
+      "price":24000,
+      "category":"Boucherie"
+   },
+   {
+      "id":29,
+      "label":"Cuisse de Canard environ 1kg",
+      "price":62200,
+      "category":"Boucherie"
+   },
+   {
+      "id":30,
+      "label":"Cuisse de Poulet | 1 kg – environ 4 pièces",
+      "price":18700,
+      "category":"Boucherie"
+   },
+   {
+      "id":160,
+      "label":"Demi-poulet en barquette Chantecler™ entre 600g et 700g | Surgelé",
+      "price":23670,
+      "category":"Boucherie"
+   },
+   {
+      "id":31,
+      "label":"Dinde entière surgelée | Environ 3 kg",
+      "price":128600,
+      "category":"Boucherie"
+   },
+   {
+      "id":32,
+      "label":"Échine de Porc | 500g Périssable",
+      "price":14000,
+      "category":"Boucherie"
+   },
+   {
+      "id":33,
+      "label":"Entrecôte de Boeuf | 500g Périssable",
+      "price":12000,
+      "category":"Boucherie"
+   },
+   {
+      "id":34,
+      "label":"Entrecôte de Boeuf préparé | 500g – viande de zébu",
+      "price":12000,
+      "category":"Boucherie"
+   },
+   {
+      "id":35,
+      "label":"Entrecôte de Boeuf Traditionnel Environ 500g LeaderPrice™ | Spécialement Halal",
+      "price":13900,
+      "category":"Boucherie"
+   },
+   {
+      "id":36,
+      "label":"Epaule de Boeuf Traditionnel Environ 500g LeaderPrice™ | Spécialement Halal",
+      "price":12533,
+      "category":"Boucherie"
+   },
+   {
+      "id":37,
+      "label":"Escalope de porc 500g",
+      "price":19000,
+      "category":"Boucherie"
+   },
+   {
+      "id":38,
+      "label":"Fanangany ou Basse-côte de Boeuf | 500g",
+      "price":10000,
+      "category":"Boucherie"
+   },
+   {
+      "id":141,
+      "label":"Farce de Porc – viande de Porc haché | 500g",
+      "price":14000,
+      "category":"Boucherie"
+   },
+   {
+      "id":3,
+      "label":"Filet de Boeuf environ 1,2Kg",
+      "price":37400,
+      "category":"Boucherie"
+   },
+   {
+      "id":39,
+      "label":"Filet de Boeuf Traditionnel Environ 500g LeaderPrice™| Spécialement Halal",
+      "price":24600,
+      "category":"Boucherie"
+   },
+   {
+      "id":142,
+      "label":"Filet mignon de Porc | 500g",
+      "price":15000,
+      "category":"Boucherie"
+   },
+   {
+      "id":40,
+      "label":"Filet Roti traditionnel Environ 500g LeaderPrice™| Spécialement Halal",
+      "price":24600,
+      "category":"Boucherie"
+   },
+   {
+      "id":143,
+      "label":"Foie de Boeuf | 500g",
+      "price":14000,
+      "category":"Boucherie"
+   },
+   {
+      "id":41,
+      "label":"Foie Gras aux Poivres Verts Environ 200g LeaderPrice",
+      "price":40770,
+      "category":"Boucherie"
+   },
+   {
+      "id":42,
+      "label":"Foie Gras aux Raisins Environ 200g LeaderPrice",
+      "price":40770,
+      "category":"Boucherie"
+   },
+   {
+      "id":43,
+      "label":"Foie Gras Nature Environ 200g LeaderPrice",
+      "price":40530,
+      "category":"Boucherie"
+   },
+   {
+      "id":44,
+      "label":"Gésier de Volaille environ 500g LeaderPrice",
+      "price":14310,
+      "category":"Boucherie"
+   },
+   {
+      "id":45,
+      "label":"Gigot D’Agneau Environ 500g LeaderPrice | Spécialement Halal",
+      "price":16600,
+      "category":"Boucherie"
+   },
+   {
+      "id":46,
+      "label":"Gîte à la Noix de Boeuf Traditionnel Environ 500g LeaderPrice | Spécialement Halal",
+      "price":13900,
+      "category":"Boucherie"
+   },
+   {
+      "id":47,
+      "label":"Grillade de Porc Environ 500g LeaderPrice",
+      "price":23130,
+      "category":"Boucherie"
+   },
+   {
+      "id":149,
+      "label":"Jambon de Porc | 500g",
+      "price":12000,
+      "category":"Boucherie"
+   },
+   {
+      "id":48,
+      "label":"Jambonneau de Porc Entier Environ 500g LeaderPrice",
+      "price":13600,
+      "category":"Boucherie"
+   },
+   {
+      "id":49,
+      "label":"Jambonneau de Porc ou Jarret | 500g",
+      "price":12000,
+      "category":"Boucherie"
+   },
+   {
+      "id":50,
+      "label":"Jarret de Boeuf Traditionnel Environ 500g LeaderPrice™| Spécialement Halal",
+      "price":11600,
+      "category":"Boucherie"
+   },
+   {
+      "id":146,
+      "label":"Kitoza de Boeuf préparé | 500g – assaisonné",
+      "price":14000,
+      "category":"Boucherie"
+   },
+   {
+      "id":145,
+      "label":"Kitoza de Porc préparé | 500g – assaisonné",
+      "price":14000,
+      "category":"Boucherie"
+   },
+   {
+      "id":147,
+      "label":"Langue de Boeuf | 1 pièce",
+      "price":21400,
+      "category":"Boucherie"
+   },
+   {
+      "id":51,
+      "label":"Lapin entier dépiauté | environ 1 kg",
+      "price":40000,
+      "category":"Boucherie"
+   },
+   {
+      "id":52,
+      "label":"Margret de Canard environ 500g LeaderPrice | Spécialement Halal",
+      "price":48270,
+      "category":"Boucherie"
+   },
+   {
+      "id":53,
+      "label":"Merguez d’Agneau 500g | Saucisse",
+      "price":18100,
+      "category":"Boucherie"
+   },
+   {
+      "id":54,
+      "label":"Merguez de Volaille Mabel entre 400g et 500g | Surgelé",
+      "price":16930,
+      "category":"Boucherie"
+   },
+   {
+      "id":55,
+      "label":"Mini Chorizo Apéro environ environ 500g LeaderPrice",
+      "price":45930,
+      "category":"Boucherie"
+   },
+   {
+      "id":56,
+      "label":"Mini Saucisse Seché Apéro environ 500g LeaderPrice",
+      "price":45930,
+      "category":"Boucherie"
+   },
+   {
+      "id":57,
+      "label":"Oreilles de Porc | 1 pièce",
+      "price":16000,
+      "category":"Boucherie"
+   },
+   {
+      "id":58,
+      "label":"Os de Porc | 500g",
+      "price":7000,
+      "category":"Boucherie"
+   },
+   {
+      "id":59,
+      "label":"Palette de Porc Environ 500g LeaderPrice",
+      "price":22530,
+      "category":"Boucherie"
+   },
+   {
+      "id":60,
+      "label":"Peau de porc 500g | Hoditra kisoa",
+      "price":8000,
+      "category":"Boucherie"
+   },
+   {
+      "id":61,
+      "label":"Pied de Boeuf | 1 pièce d’environ 1kg",
+      "price":13000,
+      "category":"Boucherie"
+   },
+   {
+      "id":148,
+      "label":"Pied de Porc sans sabot | 500g",
+      "price":10000,
+      "category":"Boucherie"
+   },
+   {
+      "id":62,
+      "label":"Pieds de Porc Environ 500g LeaderPrice",
+      "price":9500,
+      "category":"Boucherie"
+   },
+   {
+      "id":63,
+      "label":"Plat de Cote Traditionnel Environ 500g LeaderPrice | Spécialement Halal",
+      "price":8950,
+      "category":"Boucherie"
+   },
+   {
+      "id":64,
+      "label":"Poitrine d’Agneau Environ 500g LeaderPrice | Spécialement Halal",
+      "price":11300,
+      "category":"Boucherie"
+   },
+   {
+      "id":65,
+      "label":"Poitrine de Boeuf Traditionnel Environ 500g LeaderPrice | Spécialement Halal",
+      "price":9300,
+      "category":"Boucherie"
+   },
+   {
+      "id":66,
+      "label":"Poitrine de Porc | 500g",
+      "price":12000,
+      "category":"Boucherie"
+   },
+   {
+      "id":67,
+      "label":"Poitrine Fumée 200g LeaderPrice",
+      "price":15250,
+      "category":"Boucherie"
+   },
+   {
+      "id":68,
+      "label":"Poulet entier | environ 1.5 kg",
+      "price":26000,
+      "category":"Boucherie"
+   },
+   {
+      "id":69,
+      "label":"Poulet entier préparé | environ 1.5 kg – assaisonné",
+      "price":34000,
+      "category":"Boucherie"
+   },
+   {
+      "id":70,
+      "label":"Poulet Fumé environ 1kg LeaderPrice",
+      "price":38667,
+      "category":"Boucherie"
+   },
+   {
+      "id":71,
+      "label":"Poulet Manandriana environ 1kg LeaderPrice | Spécialement Halal",
+      "price":35730,
+      "category":"Boucherie"
+   },
+   {
+      "id":72,
+      "label":"Queue de bœuf 500g",
+      "price":9400,
+      "category":"Boucherie"
+   },
+   {
+      "id":73,
+      "label":"Queue de Boeuf Environ 500g LeaderPrice | Spécialement Halal",
+      "price":10600,
+      "category":"Boucherie"
+   },
+   {
+      "id":74,
+      "label":"Queue de Porc Environ 500g LeaderPrice",
+      "price":11300,
+      "category":"Boucherie"
+   },
+   {
+      "id":75,
+      "label":"Rillettes de Canard 200g LeaderPrice",
+      "price":10640,
+      "category":"Boucherie"
+   },
+   {
+      "id":76,
+      "label":"Rillettes Pur Porc 200g LeaderPrice",
+      "price":8850,
+      "category":"Boucherie"
+   },
+   {
+      "id":77,
+      "label":"Rognon de boeuf 2 pièces | Environ 600g",
+      "price":12000,
+      "category":"Boucherie"
+   },
+   {
+      "id":78,
+      "label":"Rosette Maison Pur Porc 100g LeaderPrice",
+      "price":10300,
+      "category":"Boucherie"
+   },
+   {
+      "id":79,
+      "label":"Rosette Maison Pur Porc environ 500g LeaderPrice",
+      "price":50300,
+      "category":"Boucherie"
+   },
+   {
+      "id":80,
+      "label":"Rôti de Bœuf Environ 500g LeaderPrice | Spécialement Halal",
+      "price":14400,
+      "category":"Boucherie"
+   },
+   {
+      "id":81,
+      "label":"Rôti de Cuisse de Porc Environ 500g LeaderPrice",
+      "price":22270,
+      "category":"Boucherie"
+   },
+   {
+      "id":82,
+      "label":"Rôti de Longe de Porc Environ 500g LeaderPrice",
+      "price":23500,
+      "category":"Boucherie"
+   },
+   {
+      "id":83,
+      "label":"Rouelle Cuisse de Porc Environ 500g LeaderPrice",
+      "price":19000,
+      "category":"Boucherie"
+   },
+   {
+      "id":84,
+      "label":"Rouelle de porc 500g",
+      "price":14000,
+      "category":"Boucherie"
+   },
+   {
+      "id":85,
+      "label":"Rouelle épaule de Porc Environ 500g LeaderPrice",
+      "price":16267,
+      "category":"Boucherie"
+   },
+   {
+      "id":86,
+      "label":"Rumsteak de Boeuf | 500g",
+      "price":12000,
+      "category":"Boucherie"
+   },
+   {
+      "id":87,
+      "label":"Rumsteak de boeuf Traditionnel Environ 500g LeaderPrice | Spécialement Halal",
+      "price":13800,
+      "category":"Boucherie"
+   },
+   {
+      "id":88,
+      "label":"Saucisse aux Fines Herbes environ 500g LeaderPrice",
+      "price":18130,
+      "category":"Boucherie"
+   },
+   {
+      "id":89,
+      "label":"Saucisse Chipolatas environ 500g LeaderPrice",
+      "price":17500,
+      "category":"Boucherie"
+   },
+   {
+      "id":90,
+      "label":"Saucisse Cocktail environ 500g LeaderPrice",
+      "price":20500,
+      "category":"Boucherie"
+   },
+   {
+      "id":91,
+      "label":"Saucisse de Francfort environ 500g LeaderPrice",
+      "price":39900,
+      "category":"Boucherie"
+   },
+   {
+      "id":92,
+      "label":"Saucisse de Strasbourg environ 500g LeaderPrice",
+      "price":39900,
+      "category":"Boucherie"
+   },
+   {
+      "id":93,
+      "label":"Saucisse de Toulouse environ 500g LeaderPrice",
+      "price":20133,
+      "category":"Boucherie"
+   },
+   {
+      "id":94,
+      "label":"Saucisse de Volaille environ 500g LeaderPrice",
+      "price":21530,
+      "category":"Boucherie"
+   },
+   {
+      "id":154,
+      "label":"Saucisse fumée de Porc | 500g",
+      "price":17400,
+      "category":"Boucherie"
+   },
+   {
+      "id":95,
+      "label":"Saucisse Garnie | 500g – avec de la viande de Porc",
+      "price":17240,
+      "category":"Boucherie"
+   },
+   {
+      "id":151,
+      "label":"Saucisse gasy | 500g – Mélange de Boeuf et de Porc",
+      "price":16667,
+      "category":"Boucherie"
+   },
+   {
+      "id":96,
+      "label":"Saucisse Gasy environ 500g LeaderPrice",
+      "price":13827,
+      "category":"Boucherie"
+   },
+   {
+      "id":150,
+      "label":"Saucisse mélange | 500g – Mélange de Boeuf et de Porc",
+      "price":13500,
+      "category":"Boucherie"
+   },
+   {
+      "id":97,
+      "label":"Saucisse Mélange environ 500g LeaderPrice",
+      "price":13467,
+      "category":"Boucherie"
+   },
+   {
+      "id":98,
+      "label":"Saucisse Merguez environ 500g LeaderPrice",
+      "price":20600,
+      "category":"Boucherie"
+   },
+   {
+      "id":152,
+      "label":"Saucisse pur Boeuf | 500g",
+      "price":12000,
+      "category":"Boucherie"
+   },
+   {
+      "id":153,
+      "label":"Saucisse pur Porc | 500g",
+      "price":12000,
+      "category":"Boucherie"
+   },
+   {
+      "id":99,
+      "label":"Saucisse Pur Porc Créole environ 500g LeaderPrice",
+      "price":21400,
+      "category":"Boucherie"
+   },
+   {
+      "id":100,
+      "label":"Saucisse Pur Porc environ 500g LeaderPrice",
+      "price":16200,
+      "category":"Boucherie"
+   },
+   {
+      "id":101,
+      "label":"Saucisse Pur Porc Fumée environ 500g LeaderPrice",
+      "price":21900,
+      "category":"Boucherie"
+   },
+   {
+      "id":102,
+      "label":"Saucisse seché Courbe environ 500g LeaderPrice",
+      "price":45300,
+      "category":"Boucherie"
+   },
+   {
+      "id":103,
+      "label":"Saucisse Seché environ 500g LeaderPrice",
+      "price":51300,
+      "category":"Boucherie"
+   },
+   {
+      "id":104,
+      "label":"Saucisson à l’Ail Nature environ 200g LeaderPrice",
+      "price":7200,
+      "category":"Boucherie"
+   },
+   {
+      "id":105,
+      "label":"Saute d’Agneau Environ 500g LeaderPrice | Spécialement Halal",
+      "price":18800,
+      "category":"Boucherie"
+   },
+   {
+      "id":155,
+      "label":"Silamangany de Boeuf | 500g – Os avec articulations et ligaments",
+      "price":6000,
+      "category":"Boucherie"
+   },
+   {
+      "id":106,
+      "label":"Souris d’Agneau | 1 pièce d’environ 1 kg",
+      "price":22700,
+      "category":"Boucherie"
+   },
+   {
+      "id":157,
+      "label":"Steak de Boeuf préparé | 500g – assaisonné",
+      "price":12000,
+      "category":"Boucherie"
+   },
+   {
+      "id":107,
+      "label":"Steak Haché de Boeuf Environ 500g LeaderPrice | Spécialement Halal",
+      "price":14330,
+      "category":"Boucherie"
+   },
+   {
+      "id":156,
+      "label":"Steak haché de boeuf préparé 5x100g | 500g – assaisonné et salé",
+      "price":12900,
+      "category":"Boucherie"
+   },
+   {
+      "id":108,
+      "label":"Steak haché pur boeuf 5x100g | 500g – sans assaisonement",
+      "price":12000,
+      "category":"Boucherie"
+   },
+   {
+      "id":109,
+      "label":"Terrine Campagnarde environ 200g LeaderPrice",
+      "price":5280,
+      "category":"Boucherie"
+   },
+   {
+      "id":110,
+      "label":"Terrine de Campagne aux Oignons environ environ 500g LeaderPrice",
+      "price":13200,
+      "category":"Boucherie"
+   },
+   {
+      "id":111,
+      "label":"Terrine de Canard au Poivre Vert environ 500g LeaderPrice",
+      "price":18900,
+      "category":"Boucherie"
+   },
+   {
+      "id":112,
+      "label":"Terrine de Canard environ 200g LeaderPrice",
+      "price":7420,
+      "category":"Boucherie"
+   },
+   {
+      "id":113,
+      "label":"Terrine de Foie de Volaille au Poivre Vert environ 500g LeaderPrice",
+      "price":13700,
+      "category":"Boucherie"
+   },
+   {
+      "id":114,
+      "label":"Terrine de Foie de Volaille environ 200g LeaderPrice",
+      "price":5400,
+      "category":"Boucherie"
+   },
+   {
+      "id":115,
+      "label":"Terrine de Foie de Volaille environ 500g LeaderPrice",
+      "price":11930,
+      "category":"Boucherie"
+   },
+   {
+      "id":116,
+      "label":"Terrine de Foie de Volaille Forestière environ 200g LeaderPrice",
+      "price":5500,
+      "category":"Boucherie"
+   },
+   {
+      "id":117,
+      "label":"Terrine de Foie Pur Porc environ 200g LeaderPrice",
+      "price":5400,
+      "category":"Boucherie"
+   },
+   {
+      "id":118,
+      "label":"Terrine de Foie Pur Porc Pimentée environ 200g LeaderPrice",
+      "price":5400,
+      "category":"Boucherie"
+   },
+   {
+      "id":119,
+      "label":"Terrine de Poulet environ 200g LeaderPrice",
+      "price":7440,
+      "category":"Boucherie"
+   },
+   {
+      "id":120,
+      "label":"Terrine Pur Porc Forestière environ 200g LeaderPrice",
+      "price":6030,
+      "category":"Boucherie"
+   },
+   {
+      "id":121,
+      "label":"Tête de Porc | 500g",
+      "price":12000,
+      "category":"Boucherie"
+   },
+   {
+      "id":122,
+      "label":"Tournedos Filet de Boeuf Environ 500g LeaderPrice | Spécialement Halal",
+      "price":24600,
+      "category":"Boucherie"
+   },
+   {
+      "id":123,
+      "label":"Trafony ou Bosse de Zébu | 250g – morceau gras",
+      "price":10000,
+      "category":"Boucherie"
+   },
+   {
+      "id":158,
+      "label":"Tranche fine de Boeuf | 500g",
+      "price":12000,
+      "category":"Boucherie"
+   },
+   {
+      "id":124,
+      "label":"Tranche Fine de Boeuf Traditionnelle Environ 500g LeaderPrice | Spécialement Halal",
+      "price":15400,
+      "category":"Boucherie"
+   },
+   {
+      "id":125,
+      "label":"Tranche Grasse de Boeuf Traditionnelle Environ 500g LeaderPrice | Spécialement Halal",
+      "price":13500,
+      "category":"Boucherie"
+   },
+   {
+      "id":126,
+      "label":"Travers de Porc | 500g – Ribs",
+      "price":13500,
+      "category":"Boucherie"
+   },
+   {
+      "id":127,
+      "label":"Tripe de Boeuf environ 500g LeaderPrice",
+      "price":8300,
+      "category":"Boucherie"
+   },
+   {
+      "id":159,
+      "label":"Tripes de Boeuf | 500g",
+      "price":6000,
+      "category":"Boucherie"
+   },
+   {
+      "id":128,
+      "label":"Tsa Tsiou environ 500g LeaderPrice",
+      "price":41300,
+      "category":"Boucherie"
+   },
+   {
+      "id":129,
+      "label":"Tsoka ou Os à moelle de Boeuf | environ 500g",
+      "price":2700,
+      "category":"Boucherie"
+   },
+   {
+      "id":130,
+      "label":"Viande d’agneau | 1 kg",
+      "price":27000,
+      "category":"Boucherie"
+   },
+   {
+      "id":144,
+      "label":"Viande de Boeuf hachée | 500g",
+      "price":12000,
+      "category":"Boucherie"
+   },
+   {
+      "id":131,
+      "label":"Viande de Boeuf hachée préparée | 500g",
+      "price":12900,
+      "category":"Boucherie"
+   },
+   {
+      "id":132,
+      "label":"Viande de Porc hachée 500g | sans mélange sans assaisonnement",
+      "price":11400,
+      "category":"Boucherie"
+   },
+   {
+      "id":133,
+      "label":"Viande de Porc hachée Environ 500g LeaderPrice",
+      "price":22133,
+      "category":"Boucherie"
+   }
+]
